@@ -2,7 +2,7 @@
   "name": "live_canvas",
   "version": "1.0.0",
   "description": "I am trying to build a simple REAL TIME canvas to draw on share the same live canvas to any one in the web.",
-  "main": "canvas.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
