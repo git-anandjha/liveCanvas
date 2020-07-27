@@ -1,15 +1,11 @@
 var express = require('express');
 var app = express();
+var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var port = process.env.PORT || 3000
+var port = 3000 || process.env.PORT
 app.use(express.static(__dirname + '/public'))
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
-});
-var http = require('http').Server(app);
-
-http.listen(port, function () {
-    console.log('listening on localhost:3000');
 });
 let connectedPeers = new Map()
 //keping a reference of all the connections and there passstrings
@@ -39,3 +35,6 @@ peers.on('connection', socket => {
         };
     })
 })
+http.listen(port, function () {
+    console.log('listening on localhost:3000');
+});
