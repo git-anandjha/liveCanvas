@@ -35,7 +35,7 @@ html, body {
 }
 
 #line-width-control{
-            border: 1px solid #DDD;
+        border: 1px solid #DDD;
         border-radius: 3px;
         color: #666;
         cursor: pointer;
