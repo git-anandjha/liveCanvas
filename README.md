@@ -10,11 +10,8 @@ All of them can edit the canvas live.
 
 ```
         npm install
-```
-```
+        
         cd liveCanvas
-```
-```
         node Server.js
 ```
 
