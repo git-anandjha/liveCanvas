@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+
 var port = process.env.PORT || 3000
 app.use(express.static(__dirname + '/public'))
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 let connectedPeers = new Map()
-//keping a reference of all the connections and there passstrings
 var peers = io.of('/my-namespace');
 peers.on('connection', socket => {
     connectedPeers.set(socket.id, socket)
