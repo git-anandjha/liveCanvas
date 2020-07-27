@@ -5,9 +5,8 @@ Using socket.io to send the coordinates for the line to be drwan and size of the
 You can coaborate with as many people you like in real time.
 All of them can edit the canvas live.
 
-clone this project from (git@github.com:Aanandmayi/liveCanvas.git/)
+[clone this project](git@github.com:Aanandmayi/liveCanvas.git/)
 
-[Sites Using React](https://github.com/facebook/react/wiki/Sites-Using-React)
 
 ```
         npm install
@@ -15,4 +14,4 @@ clone this project from (git@github.com:Aanandmayi/liveCanvas.git/)
         node Server.js
 ```
 
-"Educationl purpose" deployed version at 
+[Heroku Deploy]()
