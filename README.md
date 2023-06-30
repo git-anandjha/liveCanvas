@@ -13,4 +13,4 @@ All of them can edit the canvas live.
         cd liveCanvas
         node Server.js
 ```
-[DEMO Deploy here](https://live-colaboration-canvas.herokuapp.com/)
+[DEMO Deploy here](https://relatime-draw-board.onrender.com/)
